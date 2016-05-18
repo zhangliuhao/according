@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>according插件</title>
+		<style>
+       *{ margin:0; padding:0;}
+       body{ padding:50px;}
+       h3{ height:35px; line-height:35px; background-color:plum;}
+      .acc div{ height:300px; background-color:pink;}
+    /*  .module{ width: 500px; height: 300px; background-color: #fff; border:8px solid rgba(0,0,0,.3); box-shadow:0 0 8px #999; position: fixed; left: 50%; top:50%; transform:translate(-50%,-50%);}*/
+	  .active{ background-color:palegreen;}
+</style>
+
+
+		<script type="text/javascript" src="js/jquery-1.4.2.min.js">	
+		</script>
+		<script type="text/javascript" src="js/javascript1.0.js"></script>
+		<script type="text/javascript">
+		$(function(){
+		$("#acc").according({"start":2});
+		$("#acc2").according({"start":2});
+		})
+           
+		</script>
+	</head>
+	<body>
+		<span>开开心心</span>
+		<span>弹出来</span>
+<div class="acc" id="acc">
+<h3>header</h3>
+<div class="content">wo 是内容</div>
+<h3 >header2</h3>
+<div class="content">wo 是内容2</div>
+<h3>header3</h3>
+<div class="content">wo 是内容3</div>
+</div>
+
+<div class="acc" id="acc2" style="margin-top:50px;">
+<h3>header</h3>
+<div class="content">wo 是内容</div>
+<h3>header2</h3>
+<div class="content">wo 是内容2</div>
+<h3>header3</h3>
+<div class="content">wo 是内容3</div>
+</div>
+
+
+</body>
+</html>
